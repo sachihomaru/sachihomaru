@@ -1,5 +1,7 @@
 backend:
   name: git-gateway
+  identity_url: "https://sachihomaru.com/.netlify/identity"
+  gateway_url: "https://sachihomaru.com/.netlify/git"
   branch: master
 
 media_folder: static/img
