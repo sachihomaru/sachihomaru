@@ -85,16 +85,6 @@ query IndexPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
-        image {
-          publicURL
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
-        description
       }
     }
   }
