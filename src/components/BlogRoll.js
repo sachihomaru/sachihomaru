@@ -1,51 +1,39 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 class BlogRoll extends React.Component {
-
-  render() {
+  render () {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    
+
     return (
       <div className="columns is-multiline">
-      {posts && (posts
+        {posts && (posts
           .map(({ node: post }) => (
             <div
               className="is-parent column is-6"
               key={post.id}
             >
-            <article className="tile is-child box notification">
-              <p>
-                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
+              <article className="tile is-child box notification">
+                <h2>
                   {post.frontmatter.title}
-                </Link>
-                <span> &bull; </span>
-                <span className="subtitle is-size-5 is-block">{post.frontmatter.date}</span>
-              </p>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
-              </p>
+                </h2>
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
               </article>
             </div>
           )))}
-          </div>
-    );
+      </div>
+    )
   }
 }
 
 BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array,
-    }),
-  }),
+      edges: PropTypes.array
+    })
+  })
 }
 
 export default () => (
@@ -53,20 +41,21 @@ export default () => (
     query={graphql`
     query BlogRollQuery {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] },
+        sort: { order: DESC, fields: [frontmatter___path] },
         filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
       ) {
         edges {
           node {
             excerpt(pruneLength: 400)
             id
+            html
             fields {
               slug
             }
             frontmatter {
               title
+              description
               templateKey
-              date(formatString: "MMMM DD, YYYY")
             }
           }
         }

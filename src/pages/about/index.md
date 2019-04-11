@@ -1,19 +1,11 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: Profile
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+兵庫県出身。幼少期よりピアノ、ヴァイオリンなど音楽に触れながら育ち、１２歳の時、フルートに出会う。気持ちを音にのせて表現することができるフルートの魅力に惹かれていった。
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+中学から吹奏楽部、高校からは吹奏楽団にも所属し、フルートの技術を磨く。また、大学では、児童教育学を専攻。オペレッタ表現活動や合唱表現を取り入れたボランティア公演の中で、子どもたちに夢を持つことの大切さを伝えてきた。
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+小学校教諭を退職後、フルート奏者として、これまでの経験を生かし、夢を諦めず、自分を信じる強い気持ちを表現している。フルートの音色を通して、多くの人に前へ進む勇気を伝えることができる奏者を目指している。

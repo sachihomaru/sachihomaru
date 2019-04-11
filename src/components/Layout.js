@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-import './all.sass'
+import './all.scss'
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -46,7 +46,6 @@ const TemplateWrapper = ({ children }) => (
             href="/img/favicon-16x16.png"
             sizes="16x16"
           />
-
           <link
             rel="mask-icon"
             href="/img/safari-pinned-tab.svg"
@@ -60,6 +59,34 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <Navbar />
+        <div
+          className="container"
+          style={{
+            backgroundImage: `url(/img/home-jumbotron.jpg)`,
+            backgroundSize: '100% auto'
+          }}
+        >
+          <div style={{
+            display: 'flex',
+            height: '300px',
+            lineHeight: '1',
+            justifyContent: 'flex-end',
+            alignItems: 'left',
+            flexDirection: 'column' }}>
+            <h1 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              style={{
+                boxShadow: 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+                backgroundColor: 'rgb(255, 68, 0)',
+                color: 'white',
+                lineHeight: '1',
+                padding: '0.25em',
+                textAlign: 'right'
+              }}
+            >
+          Sachiho Matsumoto - Fluitist
+            </h1>
+          </div>
+        </div>
         <div>{children}</div>
         <Footer />
       </div>
