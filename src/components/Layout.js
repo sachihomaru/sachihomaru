@@ -61,9 +61,8 @@ const TemplateWrapper = ({ children }) => (
             backgroundSize: '100% auto'
           }}
         >
-          <div style={{
+          <div className="jumbo" style={{
             display: 'flex',
-            height: '300px',
             lineHeight: '1',
             justifyContent: 'flex-end',
             alignItems: 'left',

@@ -15,3 +15,29 @@ body {
   padding: 1em;
   display: inline-block;
 }
+
+.jumbo {
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .navbar-item {
+    padding: 0.7em;
+  }
+
+  .jumbo {
+    height: 200px;
+  }
+}
