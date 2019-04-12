@@ -56,35 +56,33 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/">
+            <Link className="navbar-item" to="/">
                 Home
-              </Link>
-              <Link className="navbar-item" to="/about">
+            </Link>
+            <Link className="navbar-item" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" to="/blog">
+            </Link>
+            <Link className="navbar-item" to="/blog">
                 News
-              </Link>
-              <Link className="navbar-item" to="/contact">
+            </Link>
+            <Link className="navbar-item" to="/contact">
                 Contact
-              </Link>
-              <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
-                <img
-                  className="fas fa-lg"
-                  src={twitter}
-                  alt="Twitter"
-                  style={{ width: '1em', height: '1em' }}
-                />
-              </a>
-              <a className="navbar-item" title="instagram" href="https://instagram.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  style={{ width: '1em', height: '1em' }}
-                />
-              </a>
-            </div>
+            </Link>
+            <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
+              <img
+                className="fas fa-lg"
+                src={twitter}
+                alt="Twitter"
+                style={{ width: '1em', height: '1em' }}
+              />
+            </a>
+            <a className="navbar-item" title="instagram" href="https://instagram.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
+              <img
+                src={instagram}
+                alt="Instagram"
+                style={{ width: '1em', height: '1em' }}
+              />
+            </a>
           </div>
         </div>
       </nav>

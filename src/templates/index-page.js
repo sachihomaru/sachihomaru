@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">News</h3>
                   <BlogRoll />
-                  <div>
+                  <div style={{ marginTop: '1em' }}>
                     <Link className="btn" to="/blog">
                       もっと見る
                     </Link>

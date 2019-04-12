@@ -1,5 +1,18 @@
 body {
   font-family: Verdana,"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse; 
+
+  td, th {
+    padding: 0.6em;
+  }
+
+  tr {
+    border-bottom: 1px solid #DCDCDC;
+  }
 }
 
 .container {
@@ -8,19 +21,34 @@ body {
 }
 
 .navbar-menu {
-  display: grid;
+  width: 100%;
+  display: table;
 }
 
 .navbar-item {
   padding: 1em;
-  display: inline-block;
+  box-sizing: border-box;
+  display: table-cell;
+  text-align: center;
 }
 
 .jumbo {
   height: 300px;
 }
 
+.profile-image {
+  float: left;
+  display: block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #EFEFEF;
+}
+
 @media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 0.5em;
+  }
+
   h1 {
     font-size: 1.4em;
   }
@@ -39,5 +67,12 @@ body {
 
   .jumbo {
     height: 200px;
+  }
+
+  .profile-image {
+    float: none;
+    display: block;
+    margin: 1em auto;
+    border: 1px solid #EFEFEF;
   }
 }
