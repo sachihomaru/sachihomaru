@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+import NewsRoll from '../components/NewsRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -18,9 +18,9 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <h1>{newsHeading}</h1>
-          <BlogRoll />
+          <NewsRoll />
           <div style={{ marginTop: '1em' }}>
-            <Link className="btn" to="/blog">{newsReadMore}</Link>
+            <Link className="btn" to="/news">{newsReadMore}</Link>
           </div>
         </div>
       </div>

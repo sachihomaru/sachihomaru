@@ -1,6 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: 'profile-page'
+path: /profile
 title: プロフィール
 ---
 

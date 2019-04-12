@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
 
 const Navbar = class extends React.Component {
   constructor (props) {
@@ -65,8 +63,8 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <Link className="navbar-item" to="/">ホーム</Link>
-            <Link className="navbar-item" to="/about">プロフィール</Link>
-            <Link className="navbar-item" to="/blog">お知らせ</Link>
+            <Link className="navbar-item" to="/profile">プロフィール</Link>
+            <Link className="navbar-item" to="/news">お知らせ</Link>
             <Link className="navbar-item" to="/contact">お問い合わせ</Link>
             <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-twitter"></i>
