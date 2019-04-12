@@ -5,14 +5,14 @@ body {
 }
 
 a {
-  color: rgba(255, 68, 100, 0.7);
+  color: rgba(255, 68, 100, 0.8);
 
   &:hover {
-    color: rgba(255, 68, 100, 0.8);
+    color: rgba(255, 68, 100, 0.9);
   }
 
   &:visited {
-    color: rgba(255, 68, 100, 0.7);
+    color: rgba(255, 68, 100, 0.8);
   }
 }
 
@@ -78,10 +78,13 @@ table {
 .navbar-menu {
   width: 100%;
   display: table;
+  a {
+    text-decoration: none;
+  }
 }
 
 .navbar-item, .navbar-toggle {
-  padding: 0.6em;
+  padding: 0.8em;
   box-sizing: border-box;
   display: table-cell;
   text-align: center;
@@ -91,6 +94,7 @@ table {
   display: none;
   text-align: left;
   color: rgba(255, 68, 100, 0.7);
+  padding: 0.6em;
   font-size: 1.2em;
 }
 

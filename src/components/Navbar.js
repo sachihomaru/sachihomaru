@@ -64,32 +64,15 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <Link className="navbar-item" to="/">
-            ホーム
-            </Link>
-            <Link className="navbar-item" to="/about">
-            プロフィール
-            </Link>
-            <Link className="navbar-item" to="/blog">
-            お知らせ
-            </Link>
-            <Link className="navbar-item" to="/contact">
-            お問い合わせ
-            </Link>
+            <Link className="navbar-item" to="/">ホーム</Link>
+            <Link className="navbar-item" to="/about">プロフィール</Link>
+            <Link className="navbar-item" to="/blog">お知らせ</Link>
+            <Link className="navbar-item" to="/contact">お問い合わせ</Link>
             <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
-              <img
-                className="fas fa-lg"
-                src={twitter}
-                alt="Twitter"
-                style={{ width: '1em', height: '1em' }}
-              />
+              <i className="fab fa-twitter"></i>
             </a>
             <a className="navbar-item" title="instagram" href="https://instagram.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
-              <img
-                src={instagram}
-                alt="Instagram"
-                style={{ width: '1em', height: '1em' }}
-              />
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>

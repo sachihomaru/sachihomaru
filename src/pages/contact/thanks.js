@@ -5,9 +5,9 @@ export default () => (
   <Layout>
     <section className="section">
       <div className="container">
-        <div className="content">
-          <h1>Thank you!</h1>
-          <p>This is a custom thank you page for form submissions</p>
+        <div className="section">
+          <h1>お問い合わせありがとうございます</h1>
+          <p>後ほど頂いたメールアドレスにご連絡をさせていただきます。 今しばらくお待ちください。</p>
         </div>
       </div>
     </section>
