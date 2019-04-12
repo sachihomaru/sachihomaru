@@ -15,10 +15,10 @@ class BlogRoll extends React.Component {
               className="is-parent column is-6"
               key={post.id}
             >
-              <article className="tile is-child box notification">
-                <h2>
+              <article>
+                <h1>
                   {post.frontmatter.title}
-                </h2>
+                </h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
               </article>
             </div>

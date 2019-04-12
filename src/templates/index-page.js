@@ -8,32 +8,28 @@ import BlogRoll from '../components/BlogRoll'
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-  main
+  contactHeading,
+  contactBody,
+  newsHeading,
+  newsReadMore
 }) => (
   <div>
-    <section className="section section--gradient">
+    <section className="section">
       <div className="container">
         <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">News</h3>
-                  <BlogRoll />
-                  <div style={{ marginTop: '1em' }}>
-                    <Link className="btn" to="/blog">
-                      もっと見る
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h1>{newsHeading}</h1>
+          <BlogRoll />
+          <div style={{ marginTop: '1em' }}>
+            <Link className="btn" to="/blog">{newsReadMore}</Link>
           </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div className="container">
+        <div className="section">
+          <h1>{contactHeading}</h1>
+          <p dangerouslySetInnerHTML={{ __html: contactBody }} />
         </div>
       </div>
     </section>
@@ -60,11 +56,10 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        contactHeading={frontmatter.contactHeading}
+        contactBody={frontmatter.contactBody}
+        newsHeading={frontmatter.newsHeading}
+        newsReadMore={frontmatter.newsReadMore}
       />
     </Layout>
   )
@@ -85,6 +80,10 @@ query IndexPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
+        contactHeading
+        contactBody
+        newsHeading
+        newsReadMore
       }
     }
   }

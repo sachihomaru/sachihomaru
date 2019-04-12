@@ -52,21 +52,29 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
+          <div className="navbar-toggle" onClick={() => {
+            const nav = document.querySelector('.navbar-menu')
+            if (nav.classList.contains('show')) {
+              nav.classList.remove('show')
+            } else {
+              nav.classList.add('show')
+            }
+          }}><i className="fas fa-bars"></i></div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <Link className="navbar-item" to="/">
-                Home
+            ホーム
             </Link>
             <Link className="navbar-item" to="/about">
-                About
+            プロフィール
             </Link>
             <Link className="navbar-item" to="/blog">
-                News
+            お知らせ
             </Link>
             <Link className="navbar-item" to="/contact">
-                Contact
+            お問い合わせ
             </Link>
             <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
               <img
