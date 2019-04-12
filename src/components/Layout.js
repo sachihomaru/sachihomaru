@@ -77,7 +77,7 @@ const TemplateWrapper = ({ children }) => (
                 textAlign: 'right'
               }}
             >
-          Sachiho Matsumoto - Fluitist
+          Sachiho Suzuki - Flutist
             </h1>
           </div>
         </div>
