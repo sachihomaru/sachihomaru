@@ -66,10 +66,10 @@ const Navbar = class extends React.Component {
             <Link className="navbar-item" to="/profile">プロフィール</Link>
             <Link className="navbar-item" to="/news">お知らせ</Link>
             <Link className="navbar-item" to="/contact">お問い合わせ</Link>
-            <a className="navbar-item" title="twitter" href="https://twitter.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
+            <a className="navbar-item" title="twitter" href="https://twitter.com/yumemo_bock" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-twitter"></i>
             </a>
-            <a className="navbar-item" title="instagram" href="https://instagram.com/fl_sachiho" target="_blank" rel="noopener noreferrer">
+            <a className="navbar-item" title="instagram" href="https://www.instagram.com/yumemo.bock_flute" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
